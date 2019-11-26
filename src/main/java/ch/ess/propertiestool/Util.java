@@ -16,7 +16,6 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -351,7 +350,7 @@ public class Util {
 	}
 
 	public static Map<String, Map<String, String>> keyValuesPerLanguageXls(
-			String excelFile) throws IOException, InvalidFormatException {
+			String excelFile) throws IOException {
 
 		Map<String, Map<String, String>> keyValuesPerLanguage = new LinkedHashMap<>();
 
